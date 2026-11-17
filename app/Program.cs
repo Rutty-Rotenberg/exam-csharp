@@ -21,7 +21,7 @@ class Program
         // Write your code here. 'reportDay' and 'rows' are ready.
     }
 
-    static int ReadReportDay(string[] lines)
+    public static int ReadReportDay(string[] lines)
     {
         return int.Parse(lines[0].Split(':')[1].Trim());
     }
