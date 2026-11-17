@@ -1,0 +1,159 @@
+{
+ "kind": "placement-results",
+ "version": 1,
+ "mode": "D",
+ "lang": "csharp",
+ "created": "2026-11-17T17:11:24",
+ "created_epoch": 1794928284789,
+ "at": null,
+ "build": {
+  "ok": true,
+  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:02.23",
+  "ms": 2448
+ },
+ "runs": [
+  {
+   "file": "check2.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 54,
+   "stdout": "FINES\r\n201,הניה ברק,40\r\n202,צפורה לנדאו,6\r\n214,זלדה פרי,8\r\n203,גליה שפירא,5\r\n204,דליה כהנא,25\r\n205,יוכבד ליבר,2\r\n206,תמר אלון,0\r\n207,שולמית רז,0\r\n208,רות בן דוד,0\r\n209,ברכה טל,2\r\n210,טליה נוי,13\r\n211,פזית הורוביץ,0\r\n212,נאוה שגיא,0\r\n213,חיה מור,6\r\n217,מרים אשכנזי,4\r\n218,אילנה צור,4\r\nFLAGGED\r\n211,פזית הורוביץ\r\nERRORS\r\nTOTAL,115\r\nTOP_BOOKS\r\nאיסתרק,5\r\nקיצור שולחן ערוך,5\r\nעולם חירש,4\r\nAT_RISK\r\n",
+   "stderr_tail": "",
+   "decode_problem": false
+  }
+ ],
+ "sample_run": {
+  "file": "sample.txt",
+  "exit": 0,
+  "timed_out": false,
+  "ms": 55,
+  "stdout": "FINES\r\n11,רחל כהן,2\r\n12,מרים לוי,40\r\n21,שרה גולד,0\r\n31,לאה רוזן,8\r\nFLAGGED\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,50\r\nTOP_BOOKS\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\n",
+  "stderr_tail": "",
+  "decode_problem": false
+ },
+ "warnings": [],
+ "files": [
+  {
+   "path": "app/Program.cs",
+   "lines": 130,
+   "classes": [
+    "Program"
+   ],
+   "functions": [
+    {
+     "name": "Main",
+     "lines": 74
+    },
+    {
+     "name": "ReadReportDay",
+     "lines": 4
+    },
+    {
+     "name": "ReadRows",
+     "lines": 12
+    },
+    {
+     "name": "ReadRawRows",
+     "lines": 10
+    },
+    {
+     "name": "FindSample",
+     "lines": 11
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/ReportMaker.cs",
+   "lines": 82,
+   "classes": [
+    "ReportMaker"
+   ],
+   "functions": [
+    {
+     "name": "ReportMaker",
+     "lines": 5
+    },
+    {
+     "name": "IsOkLoan",
+     "lines": 22
+    },
+    {
+     "name": "FineForStudent",
+     "lines": 8
+    },
+    {
+     "name": "FineForAlumna",
+     "lines": 6
+    },
+    {
+     "name": "FineForLoan",
+     "lines": 7
+    },
+    {
+     "name": "IsFlagged",
+     "lines": 5
+    },
+    {
+     "name": "FineForGuest",
+     "lines": 5
+    },
+    {
+     "name": "EndDay",
+     "lines": 4
+    }
+   ],
+   "type_ifs": 5
+  },
+  {
+   "path": "app/src/Book.cs",
+   "lines": 18,
+   "classes": [
+    "Book"
+   ],
+   "functions": [
+    {
+     "name": "Book",
+     "lines": 5
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/src/Loan.cs",
+   "lines": 26,
+   "classes": [
+    "Loan"
+   ],
+   "functions": [
+    {
+     "name": "Loan",
+     "lines": 9
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/src/Reader.cs",
+   "lines": 28,
+   "classes": [
+    "EnumStatus",
+    "Reader"
+   ],
+   "functions": [
+    {
+     "name": "Reader",
+     "lines": 8
+    }
+   ],
+   "type_ifs": 0
+  }
+ ],
+ "git": {
+  "available": true,
+  "commit": "2b49334",
+  "note": "nothing new to commit",
+  "log": "4cf424d|2026-11-17 13:45:24 +0200|start\n398f1d4|2026-11-17 16:13:21 +0200|16:11\n58a88ea|2026-11-17 16:58:08 +0200|level 4\nb77e4b7|2026-11-17 17:10:30 +0200|change 1\n2b49334|2026-11-17 17:11:03 +0200|change 2",
+  "numstat": "commit|4cf424d|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|398f1d4|16:11\n\n1\t1\tapp/Program.cs\n35\t0\tapp/ReportMaker.cs\n3\t0\tapp/app.slnx\n18\t0\tapp/src/Book.cs\n26\t0\tapp/src/Loan.cs\n28\t0\tapp/src/Reader.cs\ncommit|58a88ea|level 4\n\n77\t2\tapp/Program.cs\n58\t18\tapp/ReportMaker.cs\ncommit|b77e4b7|change 1\n\n9\t2\tapp/ReportMaker.cs\n164\t0\tresults_C.json\ncommit|2b49334|change 2\n\n1\t1\tapp/src/Reader.cs"
+ }
+}
