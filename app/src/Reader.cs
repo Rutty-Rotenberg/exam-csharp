@@ -6,7 +6,7 @@ namespace App.src
 {
     public enum EnumStatus
     {
-        Student, Teacher, Guest
+        Student, Teacher, Guest, alumna
     }
     public class Reader
     {
