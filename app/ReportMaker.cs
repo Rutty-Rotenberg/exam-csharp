@@ -26,7 +26,7 @@ namespace App
             if (!int.TryParse(line[0], out _) || !int.TryParse(line[4], out int loanDay))
                 return false;
 
-            if (line[2] != "student" && line[2] != "teacher" && line[2] != "guest")
+            if (line[2] != "student" && line[2] != "teacher" && line[2] != "guest" && line[2] != "alumna")
                 return false;
 
             if (line[5] != string.Empty &&
@@ -42,13 +42,20 @@ namespace App
             if (overdueDays <= 1)
                 return 0;
 
-            return Math.Min(30, overdueDays);
+            return Math.Min(40, overdueDays);
+        }
+        public int FineForAlumna(string[] loan)
+        {
+            int overdueDays = Math.Max(0, EndDay(loan) - int.Parse(loan[4]) - 10);
+            int fine = (overdueDays * 3 + 1) / 2;
+            return Math.Min(25, fine);
         }
 
         public int FineForLoan(string[] loan)
         {
             if (loan[2] == "student") return FineForStudent(loan);
             if (loan[2] == "teacher") return 0;
+            if (loan[2] == "alumna") return FineForAlumna(loan);
             return FineForGuest(loan);
         }
 

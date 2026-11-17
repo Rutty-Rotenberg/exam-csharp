@@ -1,0 +1,164 @@
+{
+ "kind": "placement-results",
+ "version": 1,
+ "mode": "C",
+ "lang": "csharp",
+ "created": "2026-11-17T16:59:17",
+ "created_epoch": 1794927557772,
+ "at": null,
+ "build": {
+  "ok": true,
+  "output": "Build succeeded.\n    1 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:02.16",
+  "ms": 2554
+ },
+ "runs": [
+  {
+   "file": "check1a.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 48,
+   "stdout": "FINES\r\n101,צביה לוין,6\r\n102,תהילה כץ,0\r\n107,יעל אדלר,8\r\n103,שירה גבאי,0\r\n104,דינה שטרן,2\r\n112,בינה קליין,8\r\n105,הדסה וולף,30\r\n113,זהבה אורן,60\r\n106,חנה רוזן,6\r\n121,גאולה חדד,18\r\n108,טובה מזרחי,100\r\n109,רבקה פישר,0\r\n110,פנינה עזרא,0\r\n111,נחמה ברגר,0\r\n114,מיכל דהן,4\r\n115,אורית שמש,4\r\nFLAGGED\r\n110,פנינה עזרא\r\nERRORS\r\nTOTAL,246\r\nTOP_BOOKS\r\nאיסתרק,8\r\nקיצור שולחן ערוך,6\r\nעולם חירש,4\r\nAT_RISK\r\n121,גאולה חדד\r\n",
+   "stderr_tail": "",
+   "decode_problem": false
+  },
+  {
+   "file": "check1b.txt",
+   "exit": 0,
+   "timed_out": false,
+   "ms": 55,
+   "stdout": "FINES\r\n131,לאה גולן,3\r\n132,עדי פרלמן,5\r\n136,שפרה ליפשיץ,0\r\n137,אסתר כרמי,0\r\nFLAGGED\r\nERRORS\r\n133,מלכה נחום,student,איסתרק,80,70\r\n134,נעמי סגל,student,עולם חירש,40\r\n135,ענבל פרץ,staff,להשאר יהודי,30,40\r\nTOTAL,8\r\nTOP_BOOKS\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nעולם חירש,1\r\nAT_RISK\r\n",
+   "stderr_tail": "",
+   "decode_problem": false
+  }
+ ],
+ "sample_run": {
+  "file": "sample.txt",
+  "exit": 0,
+  "timed_out": false,
+  "ms": 55,
+  "stdout": "FINES\r\n11,רחל כהן,2\r\n12,מרים לוי,30\r\n21,שרה גולד,0\r\n31,לאה רוזן,8\r\nFLAGGED\r\n21,שרה גולד\r\nERRORS\r\n13,דינה אבן,student,קיצור שולחן ערוך,50,45\r\nTOTAL,40\r\nTOP_BOOKS\r\nעולם חירש,2\r\nאיסתרק,1\r\nלהשאר יהודי,1\r\nAT_RISK\r\n",
+  "stderr_tail": "",
+  "decode_problem": false
+ },
+ "warnings": [],
+ "files": [
+  {
+   "path": "app/Program.cs",
+   "lines": 130,
+   "classes": [
+    "Program"
+   ],
+   "functions": [
+    {
+     "name": "Main",
+     "lines": 74
+    },
+    {
+     "name": "ReadReportDay",
+     "lines": 4
+    },
+    {
+     "name": "ReadRows",
+     "lines": 12
+    },
+    {
+     "name": "ReadRawRows",
+     "lines": 10
+    },
+    {
+     "name": "FindSample",
+     "lines": 11
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/ReportMaker.cs",
+   "lines": 75,
+   "classes": [
+    "ReportMaker"
+   ],
+   "functions": [
+    {
+     "name": "ReportMaker",
+     "lines": 5
+    },
+    {
+     "name": "IsOkLoan",
+     "lines": 22
+    },
+    {
+     "name": "FineForStudent",
+     "lines": 8
+    },
+    {
+     "name": "FineForLoan",
+     "lines": 6
+    },
+    {
+     "name": "IsFlagged",
+     "lines": 5
+    },
+    {
+     "name": "FineForGuest",
+     "lines": 5
+    },
+    {
+     "name": "EndDay",
+     "lines": 4
+    }
+   ],
+   "type_ifs": 4
+  },
+  {
+   "path": "app/src/Book.cs",
+   "lines": 18,
+   "classes": [
+    "Book"
+   ],
+   "functions": [
+    {
+     "name": "Book",
+     "lines": 5
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/src/Loan.cs",
+   "lines": 26,
+   "classes": [
+    "Loan"
+   ],
+   "functions": [
+    {
+     "name": "Loan",
+     "lines": 9
+    }
+   ],
+   "type_ifs": 0
+  },
+  {
+   "path": "app/src/Reader.cs",
+   "lines": 28,
+   "classes": [
+    "EnumStatus",
+    "Reader"
+   ],
+   "functions": [
+    {
+     "name": "Reader",
+     "lines": 8
+    }
+   ],
+   "type_ifs": 0
+  }
+ ],
+ "git": {
+  "available": true,
+  "commit": "58a88ea",
+  "note": "nothing new to commit",
+  "log": "4cf424d|2026-11-17 13:45:24 +0200|start\n398f1d4|2026-11-17 16:13:21 +0200|16:11\n58a88ea|2026-11-17 16:58:08 +0200|level 4",
+  "numstat": "commit|4cf424d|start\n\n7\t0\t.gitignore\n55\t0\tapp/Program.cs\n11\t0\tapp/app.csproj\n449\t0\tcheck/run_checks.py\n8\t0\tdata/sample.txt\ncommit|398f1d4|16:11\n\n1\t1\tapp/Program.cs\n35\t0\tapp/ReportMaker.cs\n3\t0\tapp/app.slnx\n18\t0\tapp/src/Book.cs\n26\t0\tapp/src/Loan.cs\n28\t0\tapp/src/Reader.cs\ncommit|58a88ea|level 4\n\n77\t2\tapp/Program.cs\n58\t18\tapp/ReportMaker.cs"
+ }
+}
